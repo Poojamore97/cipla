@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://cdn.syncfusion.com/16.4.0.42/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"> </script>
+    <script src="https://cdn.syncfusion.com/16.4.0.42/js/web/ej.web.all.min.js" type="text/javascript"></script>"
+    <style>
+        .outerContentWrapper {
+            background-image: url('child2.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        #container {
+            touch-action: none !important;
+            user-select: none !important;           
+            position: relative;
+        }
+
+        .homeIcon {
+            flex: 0 0 97%;
+        }
+
+        .homeIcon span {
+            font-size: 35px;
+            width: 35px;
+        }
+
+        .backBtnSvg svg {
+            width: 35px;
+            height: 35px;
+            cursor: pointer;
+            position: relative;
+        }      
+
+        .leftTitleWrapper {
+            margin-left: 15px;
+            font-family: sans-serif;
+            font-weight: 900;
+            font-family: sans-serif;
+            color: #75229e;
+        }
+
+        .endTextWrapper {
+            font-size: 12px;
+            color: #75229e
+        }
+
+        .dataWrapper {
+            display: flex;
+            margin-top: 15%;
+            flex-wrap: wrap;
+            justify-content: center
+        }
+
+        .circleWrapper {
+            width: 40%;
+            position: relative;
+        }
+
+        .imgWrapper {
+            width: 70%;
+        }
+
+        @media (min-width: 768px) and (max-width: 1024px) {
+            .dataWrapper {
+                margin-top: 50%;
+                justify-content: center
+            }
+
+            .circleWrapper {
+                width: 100%;
+                text-align: center;
+            }
+
+            .imgWrapper {
+                width: 60%
+            }
+        }
+
+
+        @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+            /* ##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px */
+            .dataWrapper {
+                margin-top: 15%;
+                justify-content: initial
+            }
+
+            .circleWrapper {
+                width: 25%;
+                /* text-align: center; */
+            }
+
+            .imgWrapper {
+                width: 100%
+            }
+        }
+
+        @media (min-width: 481px) and (max-width: 767px) {
+
+            /* 
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = B/w 481px to 767px
+*/
+            .dataWrapper {
+                margin-top: 55%;
+                justify-content: center
+            }
+
+            .circleWrapper {
+                width: 100%;
+                text-align: center;
+            }
+
+            .imgWrapper {
+                width: 60%
+            }
+
+        }
+
+        @media (min-width: 200px) and (max-width: 480px) {
+
+            /* 
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+            .dataWrapper {
+                margin-top: 55%;
+                justify-content: center
+            }
+
+            .circleWrapper {
+                width: 100%;
+                text-align: center;
+            }
+
+            .imgWrapper {
+                width: 60%
+            }
+
+        }
+
+        @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px)and (orientation: portrait) {
+
+            /* ipad pro */
+            .dataWrapper {
+                margin-top: 40%;
+                justify-content: center
+            }
+
+            .circleWrapper {
+                width: 100%;
+                text-align: center;
+            }
+
+            .imgWrapper {
+                width: 60%
+            }
+
+        }
+
+        #template_0_0_container {
+            background-color: unset !important;
+            color: rgb(238, 176, 238);
+            font-weight: 900
+        }
+
+        #template_1_0_container {
+            background-color: unset !important;
+            color: rgb(238, 176, 238);
+            font-weight: 900;
+            left: 288.264px !important;
+            top: 185.676px !important;
+        }
+
+        #template_2_0_container {
+            background-color: unset !important;
+            color: #6a2f85;
+            font-weight: 900
+        }
+
+        #template_3_0_container {
+            background-color: unset !important;
+            color: #6a2f85;
+            font-weight: 900
+        }
+
+      
+    </style>
+</head>
+
+<body class="outerContentWrapper">
+    <div>
+        <div class="dataWrapper">
+            <div class="circleWrapper">
+                <img src="c5.png" class="imgWrapper">
+            </div>
+            <div class="content-container-fluid">
+                <div id="container"></div>
+            </div>
+        </div>
+        <div id="template">
+            <div id="point">#point.y#%</div>
+        </div>
+
+        <div style="display:flex;margin-top:-1%">
+
+            <div class="homeIcon">
+                <a href="Home_Page.html" style="color:black"><span class="glyphicon glyphicon-home"></span></a>
+            </div>
+            <div class="backBtnSvg">
+                <svg id="Capa_1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px" y="0px" viewBox="0 0 487.622 487.622" style="enable-background:new 0 0 487.622 487.622"
+                    xml:space="preserve">
+                    <g>
+                        <g>
+                            <circle style="fill:rgb(19, 136, 111)" cx="243.811" cy="243.811" r="243.811"></circle>
+                            <path style="fill:rgb(19, 136, 111)" d="M487.479,251.765l-87.965-69.016l-80.212,0.008l-86.559-52.091l2.058,226.284l133.459,96.54      C437.592,412.251,484.726,337.617,487.479,251.765z">
+                            </path>
+                            <path style="opacity:0.37;fill:rgb(19, 136, 111);enable-background:new    " d="M487.479,251.765l-87.965-69.016l-80.212,0.008      l-86.559-52.091l2.058,226.284l133.459,96.54C437.592,412.251,484.726,337.617,487.479,251.765z">
+                            </path>
+                            <polygon style="fill:#FFFFFF" points="88.109,243.809 234.801,130.666 234.801,182.749 399.514,182.749 399.514,304.873       234.801,304.873 234.801,356.951">
+                            </polygon>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script type="text/javascript" language="javascript">
+        var chartObj;
+
+        $(function () {
+            $("#container").ejChart(
+                {
+                    //Initializing Primary X Axis	
+                    primaryXAxis:
+                    {
+                        title: {
+                            text: "Seizure type",
+                            font: {
+                                fontFamily: 'Segoe UI',
+                                size: '16px',
+                                fontWeight: 'bold',
+                                color: 'grey',
+                            },
+                        },
+                    },
+                    //Initializing Primary Y Axis	
+                    primaryYAxis:
+                    {
+                        range: { min: 0, max: 70, interval: 10 },
+                        title: {
+                            text: "Mediun Sezuier Reduction"
+                        }
+                    },
+                    //Initializing Common Properties for all the series
+                    commonSeriesOptions:
+                    {
+                        // tooltip: { visible: true, format: "#point.x# : #point.y#mg" },
+                        type: "stackingColumn",
+                        enableAnimation: true,
+                        marker: {
+                            dataLabel: {
+                                visible: true,
+                                fill: '#6A2F85',
+                                //Set template to data label
+                                template: 'template'
+                            }
+                        }
+                        // columnWidth: 0.7
+                    },
+                    border: { color: "#de7cb0", width: 2, opacity: 0.35, },
+                    //Initializing Series
+                    series:
+                        [
+                            {
+                                points: [{ x: "All Partial", y: 53.0, fill: "#eeb0ee", }],
+
+                            },
+                            {
+                                points: [{ x: "Simple Partial only", y: 26.4, fill: '#eeb0ee' },],
+
+                            },
+                            {
+                                points: [{ x: "Complex Partial only ", y: 46.9, fill: "#6A2F85", }],
+
+                            },
+                            {
+                                points: [{ x: "Partial Secondarily Generalized", y: 64.0, fill: '#6A2F85' },],
+
+                            },
+                            // columnWidth: 0.7;
+                        ],
+                    //Enabling 3D Chart
+                    enable3D: true,
+                    enableRotation: false,
+                    depth: 100,
+                    wallSize: 1,
+                    tilt: 10,
+                    rotation: 14,
+                    perspectiveAngle: 20,
+                    // sideBySideSeriesPlacement: true,
+                    // load: "loadTheme",                   
+                    isResponsive: true,
+                    size: { width: '700', height: '400' },
+                    legend: { visible: false },
+                });
+            $("#sampleProperties").ejPropertiesPanel();
+        });       
+    </script>
+</body>
+
+</html>
